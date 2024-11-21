@@ -13,7 +13,7 @@ const Home = () => {
                 <h3>Upcoming Matches</h3>
                 <div className='hupl'>
                 
-                <p><strong>HUPL Match Date:</strong> Dec 5, 2024 at 2:00 PM - <strong>Opponent:</strong> Huskies - <strong>Location:</strong> Badri Stadium</p>
+                <p><strong>HUPL Match Date:</strong> Nov 23, 2024 at 2:00 PM - <strong>Opponent:</strong> Huskies - <strong>Location:</strong> Badri Stadium</p>
                 </div>
                 <div className='bth'>
                 
