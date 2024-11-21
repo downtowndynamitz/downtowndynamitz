@@ -6,7 +6,7 @@ const Contact = () => {
             <h2>Contact Us</h2>
             <div class="contact-info">
                 <p>We would love to hear from you! Here are the ways you can reach us:</p>
-                <p><strong>General :</strong> <a href="mailto:downtown.dynamitz@example.com">downtown.dynamitz@example.com</a></p>
+                <p><strong>General :</strong> <a href="mailto:downtowndynamitz@gmail.com">downtowndynamitz@gmail.com</a></p>
                 <p><strong>Finance :</strong> <a href="mailto:girisirimullandram@gmail.com">girisirimullandram@gmail.com</a>, <a href="mailto:upender.cht@gmail.com">upender.cht@gmail.com</a></p>
             </div>
             
