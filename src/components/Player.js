@@ -4,7 +4,7 @@ import './Player.css';
 
 const Player = ({ player }) => {
     return (
-        <div className="player-card">
+        <div className="player-card tablecards">
             <Link to={`/team/${player.id}`}>
                 <img src={player.photo} alt={`${player.name}`} className="player-photo" />
                 <h2>{player.name}</h2>

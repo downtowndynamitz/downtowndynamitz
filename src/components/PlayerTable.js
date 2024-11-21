@@ -48,7 +48,7 @@ const PlayerTable = ({ players }) => {
     ];
 
     return (
-        <DataTable
+        <DataTable 
             title="Downtown Dynamitz Cricket Team"
             columns={columns}
             data={players}
