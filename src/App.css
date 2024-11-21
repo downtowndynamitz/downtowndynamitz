@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  background-color: #00175f;
+}
+
+header {
+  background-color: #00175f;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.team, .home, .schedule, .contact, .player-details {
+  margin: 20px;
+  background-color: floralwhite;
+  height:2024px;
+}
+
+.player-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.player-details .player-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.data-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.photo-gallery,.latest-news,.upcoming-matches, .weeklykey-players {
+  h3{
+    text-decoration: underline;
+  }
+  
+}
+.photo-gallery img{
+  width: 650px;
+  height: 540px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.upcoming-matches .hupl .bth {
+  width: 1000px;
+  height: 100px;
+  border-radius: 50%;
+}

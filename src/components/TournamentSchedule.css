@@ -1,0 +1,41 @@
+.tournament-schedule {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 90%;
+}
+
+.tournament-schedule h2 {
+    margin-top: 0;
+}
+
+.tournament-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tournament-schedule th, .tournament-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tournament-schedule th {
+    background-color: #f2f2f2;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+tr:nth-child(7n) {  background-color:  rgb(249, 195, 141);}
+tr:nth-child(7n+1) { background-color:  rgb(173, 255, 173);}
+tr:nth-child(7n+2) { background-color:  rgb(255, 255, 203);}
+tr:nth-child(7n+3) { background-color:  rgb(166, 197, 255);}
+tr:nth-child(7n+4) { background-color:  rgb(244, 197, 242);}
+tr:nth-child(7n+5) {  background-color:  rgb(255, 174, 178);}
