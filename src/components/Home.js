@@ -11,14 +11,10 @@ const Home = () => {
 
             <div class="upcoming-matches">
                 <h3>Upcoming Matches</h3>
-                <div className='hupl'>
                 
                 <p><strong>HUPL Match Date:</strong> Nov 23, 2024 at 2:00 PM - <strong>Opponent:</strong> Huskies - <strong>Location:</strong> Badri Stadium</p>
-                </div>
-                <div className='bth'>
                 
                 <p><strong>BTH Match Date:</strong> Dec 7th, 2024 at 7.30 AM - <strong>Opponent:</strong> Houston Scorpions - <strong>Location:</strong> BTH Grounds</p>
-                </div>
                 
                     
             </div>

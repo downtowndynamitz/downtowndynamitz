@@ -1,25 +1,67 @@
 /* Base styles for the header */
-header {
+.header {
     background-color: #00175f;
     color: white;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire banner area */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: #ffd700;
+    padding: 10px;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.overlay h1 {
+    margin: 0;
+    font-size: 4rem;
+    margin-left: 40px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
 }
 
 nav ul li {
@@ -32,15 +74,22 @@ nav ul li a {
     font-weight: bold;
 }
 
-h1 {
-    margin: 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
+    .header {
         padding: 10px;
+    }
+
+    .banner {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .overlay {
+        flex-direction: column;
         text-align: center;
     }
 
@@ -48,6 +97,11 @@ h1 {
         width: 100px;
         height: 100px;
         margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
     }
 
     nav ul {
@@ -61,10 +115,5 @@ h1 {
 
     nav ul li a {
         font-size: 14px;
-    }
-
-    h1 {
-        font-size: 18px;
-        margin-bottom: 10px;
     }
 }

@@ -1,10 +1,16 @@
+/* Base styles for tournament schedule */
 .tournament-schedule {
+    flex: 1;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 10px;
-    width: 90%;
+    background-color: #00175f;
+    h2{
+        color: white;
+    }
+    
 }
 
 .tournament-schedule h2 {
@@ -28,26 +34,41 @@
 }
 
 .schedule-grid {
-    display: grid;
-    grid-template-columns: 4;
-    gap: 5px;
+    display: flex; 
+    flex-direction: row; /* Items are aligned horizontally */
+    gap: 20px; 
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-tr:nth-child(7n) {  background-color:  rgb(249, 195, 141);}
-tr:nth-child(7n+1) { background-color:  rgb(173, 255, 173);}
-tr:nth-child(7n+2) { background-color:  rgb(255, 255, 203);}
-tr:nth-child(7n+3) { background-color:  rgb(166, 197, 255);}
-tr:nth-child(7n+4) { background-color:  rgb(244, 197, 242);}
-tr:nth-child(7n+5) {  background-color:  rgb(255, 174, 178);}
+.tournament-schedule tr:nth-child(7n) { background-color: rgb(249, 195, 141); }
+.tournament-schedule tr:nth-child(7n+1) { background-color: rgb(173, 255, 173); }
+.tournament-schedule tr:nth-child(7n+2) { background-color: rgb(255, 255, 203); }
+.tournament-schedule tr:nth-child(7n+3) { background-color: rgb(166, 197, 255); }
+.tournament-schedule tr:nth-child(7n+4) { background-color: rgb(244, 197, 242); }
+.tournament-schedule tr:nth-child(7n+5) { background-color: rgb(273, 255, 176); }
+.tournament-schedule tr:nth-child(7n+6) { background-color: rgba(173, 255, 141); }
 
 .tournament-schedule h2 {
     text-decoration: underline;
 }
-.playerstats,.playerstats th,tr, td{
-    background-color: #00175f;
-    color: white;
+
+.playerstats, .playerstats {
+    th, tr, td {
+        background-color: #00175f;
+        color: white;
+        text-align: center;
+    }
+}
+
+.playerstats td {
     text-align: center;
 }
-.playerstats td{
-    text-align: center;
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .schedule-grid {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px;
+    }
 }

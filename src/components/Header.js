@@ -4,9 +4,14 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header>
-            <img src="/assets/images/current.jpg" alt="Downtown Dynamitz Logo" className="logo" />
-            <h1>Downtown Dynamitz Cricket Club</h1>
+        <header className="header">
+            <div className="banner">
+                <img src="/assets/images/banner.png" alt="Cricket Banner" className="banner-image" />
+                <div className="overlay">
+                    <img src="/assets/images/current.jpg" alt="Downtown Dynamitz Logo" className="logo" />
+                    <h1>Downtown Dynamitz Cricket Club</h1>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li><Link to="/">Home</Link></li>
