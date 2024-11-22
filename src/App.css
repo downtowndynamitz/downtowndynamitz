@@ -189,5 +189,6 @@ nav ul li a {
 
   .match-card {
     width: 90%; /* Adjust width for smaller screens */
+    margin: 10px auto; /* Center the cards on mobile screens */
   }
 }
