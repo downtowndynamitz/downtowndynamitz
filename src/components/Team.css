@@ -8,3 +8,20 @@
     gap: 20px;
     margin: 20px;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .player-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .player-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 5px;
+    }
+}

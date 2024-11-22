@@ -1,8 +1,8 @@
+/* Base styles */
 .App {
   text-align: center;
   background-color: #00175f;
 }
-
 
 header {
   background-color: #00175f;
@@ -28,7 +28,7 @@ nav ul li a {
 .team, .home, .schedule, .contact {
   margin: 20px;
   background-color: floralwhite;
-  height:2024px;
+  height: 2024px;
 }
 
 .player-details {
@@ -56,33 +56,29 @@ nav ul li a {
   border-radius: 50%;
 }
 
-.photo-gallery,.latest-news,.upcoming-matches, .weeklykey-players {
-  h3{
-    text-decoration: underline;
-  }
-  
+.photo-gallery, .latest-news, .upcoming-matches, .weeklykey-players h3 {
+  text-decoration: underline;
 }
-.photo-gallery img{
+
+.photo-gallery img {
   width: 650px;
   height: 540px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.upcoming-matches .hupl .bth {
+.upcoming-matches .hupl, .upcoming-matches .bth {
   width: 1000px;
   height: 100px;
   border-radius: 50%;
 }
 
-/* CSS */
 .container {
   display: flex;
-  /* Default value, so this might be optional */
-   /* Adjust as needed */
+  flex-direction: row; /* Default value, so this might be optional */
+  justify-content: space-between; /* Adjust as needed */
   align-items: center; /* Adjust as needed */
   background-color: floralwhite;
-  
 }
 
 .playerstatsmaingrid {
@@ -101,20 +97,71 @@ nav ul li a {
   height: 100px;
   margin-right: 20px;
   object-fit: cover;
-  
 }
-.playerstatscardcontainer{
+
+.playerstatscardcontainer {
   display: flex;
   margin-left: 10px;
 }
-.playerstatscard, .statsdata{
+
+.playerstatscard, .statsdata {
   font-weight: 500;
   white-space: nowrap;
-  p{
-    height: 1px;
+}
+
+.playerstatscard p {
+  height: 1px;
+}
+
+.statsdata {
+  font-size: xx-large;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+    font-size: 16px;
   }
-  .statsdata{
-    font-size: xx-large;
-    
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .team, .home, .schedule, .contact {
+    margin: 10px;
+    height: auto; /* Adjust height for mobile screens */
+  }
+
+  .player-details {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .player-details .player-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .upcoming-matches .hupl, .upcoming-matches .bth {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .playerstatscard {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
   }
 }
