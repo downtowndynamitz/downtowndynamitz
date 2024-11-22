@@ -255,7 +255,7 @@ const players = [
             {
              matchId: 1,matchDate: "2024-11-02", opponent: "Striders",series: "HUPL",
              batting: { position: 'Opener',runs: 14,ballsFaced: 15 },
-             bowling: { overs: '-',runsConceded: '-',wickets: '-' },
+             bowling: { overs: '',runsConceded: '',wickets: '' },
              fielding: { catches: 3,runOuts: 2,stumpings: 1 }
              },
          ],
@@ -263,13 +263,13 @@ const players = [
              {
                  matchId: 2,matchDate: "2024-11-09",opponent: "Oldfarm Rangers",series: "BTH",
                  batting: { position: 'Opener',runs: 26,ballsFaced: 18 },
-                 bowling: { overs: '-',runsConceded: '-',wickets: '-' },
+                 bowling: { overs: '',runsConceded: '',wickets: '' },
                  fielding: { catches: 0,runOuts: 0,stumpings: 0 }
              },
              {
                  matchId: 3,matchDate: "2024-11-16",opponent: "Cypress Warriors",series: "BTH",
                  batting: { position: 'Opener',runs: 0,ballsFaced: 1 },
-                 bowling: { overs: '-',runsConceded: '-', wickets: '-' },
+                 bowling: { overs: '',runsConceded: '', wickets: '' },
                  fielding: { catches: 5,runOuts: 0, stumpings: 0 }
              },
          ]
@@ -316,7 +316,7 @@ const players = [
         bthmatches: [
             {
                 matchId: 2,matchDate: "2024-11-09",opponent: "Oldfarm Rangers",series: "BTH",
-                batting: { position: '-',runs: '-',ballsFaced: '-' },
+                batting: { position: '-',runs: '',ballsFaced: '' },
                 bowling: { overs: 4,runsConceded: 23,wickets: 1 },
                 fielding: { catches: 1,runOuts: 0,stumpings: 0 }
             },
@@ -346,14 +346,14 @@ const players = [
         bthmatches: [
             {
                 matchId: 2,matchDate: "2024-11-09",opponent: "Oldfarm Rangers",series: "BTH",
-                batting: { position: '-',runs: '-',ballsFaced: '-' },
+                batting: { position: '-',runs: '',ballsFaced: '' },
                 bowling: { overs: '-',runsConceded: '-', wickets: '-' },
                 fielding: { catches: 0,runOuts: 0,stumpings: 0 }
             },
             {
                 matchId: 3,matchDate: "2024-11-16",opponent: "Cypress Warriors",series: "BTH",
                 batting: { position: 4,runs: 10,ballsFaced: 19 },
-                bowling: { overs: '-',runsConceded: '-', wickets: '-' },
+                bowling: { overs: '',runsConceded: '', wickets: '' },
                 fielding: { catches: 1,runOuts: 0, stumpings: 0 }
             },
         ]
@@ -376,13 +376,13 @@ const players = [
             {
                 matchId: 2,matchDate: "2024-11-09",opponent: "Oldfarm Rangers",series: "BTH",
                 batting: { position: 3,runs: 2,ballsFaced: 1 },
-                bowling: { overs: '-',runsConceded: '-', wickets: '-' },
+                bowling: { overs: '',runsConceded: '', wickets: '' },
                 fielding: { catches: 0,runOuts: 0, stumpings: 0 }
             },
             {
                 matchId: 3,matchDate: "2024-11-16",opponent: "Cypress Warriors",series: "BTH",
                 batting: { position: 3,runs: 0,ballsFaced: 1 },
-                bowling: { overs: '-',runsConceded: '-', wickets: '-' },
+                bowling: { overs: '',runsConceded: '', wickets: '' },
                 fielding: { catches: 0,runOuts: 0, stumpings: 0 }
             },
         ]
@@ -405,7 +405,7 @@ const players = [
         bthmatches: [
             {
                 matchId: 2,matchDate: "2024-11-09",opponent: "Oldfarm Rangers",series: "BTH",
-                batting: { position: '-',runs: '-',ballsFaced: '-' },
+                batting: { position: '-',runs: '',ballsFaced: '' },
                 bowling: { overs: 3,runsConceded: 22,wickets: 0 },
                 fielding: { catches: 1,runOuts: 0,stumpings: 0 }
             },
