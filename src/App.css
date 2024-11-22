@@ -3,6 +3,7 @@
   background-color: #00175f;
 }
 
+
 header {
   background-color: #00175f;
   color: white;
@@ -24,7 +25,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-.team, .home, .schedule, .contact, .player-details {
+.team, .home, .schedule, .contact {
   margin: 20px;
   background-color: floralwhite;
   height:2024px;
@@ -37,6 +38,8 @@ nav ul li a {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: left;
+  background-color: #00175f;
+  color: white;
 }
 
 .player-details .player-photo {
@@ -70,4 +73,48 @@ nav ul li a {
   width: 1000px;
   height: 100px;
   border-radius: 50%;
+}
+
+/* CSS */
+.container {
+  display: flex;
+  /* Default value, so this might be optional */
+   /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+  background-color: floralwhite;
+  
+}
+
+.playerstatsmaingrid {
+  flex: 1; /* Adjust as needed to control the space each div takes up */
+}
+
+.playerstatscard {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #00175f;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  
+}
+.playerstatscardcontainer{
+  display: flex;
+  margin-left: 10px;
+}
+.playerstatscard, .statsdata{
+  font-weight: 500;
+  white-space: nowrap;
+  p{
+    height: 1px;
+  }
+  .statsdata{
+    font-size: xx-large;
+    
+  }
 }

@@ -29,8 +29,8 @@
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: 4;
+    gap: 5px;
 }
 
 tr:nth-child(7n) {  background-color:  rgb(249, 195, 141);}
@@ -39,3 +39,15 @@ tr:nth-child(7n+2) { background-color:  rgb(255, 255, 203);}
 tr:nth-child(7n+3) { background-color:  rgb(166, 197, 255);}
 tr:nth-child(7n+4) { background-color:  rgb(244, 197, 242);}
 tr:nth-child(7n+5) {  background-color:  rgb(255, 174, 178);}
+
+.tournament-schedule h2 {
+    text-decoration: underline;
+}
+.playerstats,.playerstats th,tr, td{
+    background-color: #00175f;
+    color: white;
+    text-align: center;
+}
+.playerstats td{
+    text-align: center;
+}

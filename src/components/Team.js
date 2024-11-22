@@ -5,7 +5,7 @@ import './Team.css';
 const Team = ({ players }) => {
     return (
         <div className="team">
-            <h1>Downtown Dynamitz Cricket Team</h1>
+            <h1>Meet the Team</h1>
             <div className="player-grid">
                 {players.map(player => (
                     <Player key={player.name} player={player} />
