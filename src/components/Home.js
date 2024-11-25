@@ -27,15 +27,19 @@ const Home = () => {
 
             <div className="latest-news">
                 <h3>Latest News</h3>
-                <p>Downtown Dynamitz secures a thrilling victory against the Oldfarm Rangers!</p>
-                <p>Star player <strong>Kiran Boddupalli</strong> achieves a personal best with 33 runs.</p>
+                <p>Downtown Dynamitz secures a thrilling victory against Huskies!</p>
+                <p>Match Winning Knock by <strong>Ashok Varma</strong> achieves his personal best with 38 runs in just 22 balls.</p>
+                <p>Outstanding Bowling Performance from <strong>Sunil Yernagula</strong> bowling 4 overs and taking 3 crucial wickets.</p>
+                <p>Outstanding Bowling Performance from <strong>Harsha Ramaneedi</strong> bowling 3 overs conceeding 12 runs and breaking a crucial partneship.</p>
+                <p>Nail bitting performance from <strong>Satya Vemuri</strong> bowling last over by restricting them with 1 run when 8 runs are required.</p>
             </div>
 
             <div className="weeklykey-players">
                 <h3>Meet Our Key Players for this week</h3>
-                <p><a href="/team/kiranp">Kiran Kumar Pariti - Captain</a></p>
-                <p><a href="/team/kiranb">Kiran Boddupalli - Batsman</a></p>
-                <p><a href="/team/ashok">Ashok Kolluru - Bowler</a></p>
+                <p><a href="/team/ashokv">Ashok Varma - Batsman</a></p>
+                <p><a href="/team/sunil">Sunil Yernagula- Bowler</a></p>
+                <p><a href="/team/harsha">Harsha Ramaneedi - Bowler</a></p>
+                <p><a href="/team/satya">Satya Vemuri - Bowler</a></p>
             </div>
         </div>
     );
