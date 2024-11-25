@@ -59,6 +59,12 @@ const players = [
             bowling: { overs: 2,runsConceded: 37,wickets: 1 },
             fielding: { catches: 0,runOuts: 0,stumpings: 0 }
             },
+            {
+            matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+            batting: { position: 5,runs: 38,ballsFaced: 22 },
+            bowling: { overs: 4,runsConceded: 44,wickets: 1 },
+            fielding: { catches: 1,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
             {
@@ -188,6 +194,12 @@ const players = [
              bowling: { overs: '',runsConceded: '',wickets: '' },
              fielding: { catches: 1,runOuts: 0,stumpings: 0 }
              },
+             {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 3,runs: 6,ballsFaced: 7 },
+                bowling: { overs: 3,runsConceded: 12,wickets: 3 },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+                },
          ],
          bthmatches: [
              {
@@ -258,6 +270,12 @@ const players = [
              bowling: { overs: '',runsConceded: '',wickets: '' },
              fielding: { catches: 3,runOuts: 2,stumpings: 1 }
              },
+             {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 'Opener',runs: 19,ballsFaced: 16 },
+                bowling: { overs: '',runsConceded: '',wickets: '' },
+                fielding: { catches: 4,runOuts: 0,stumpings: 0 }
+            },
          ],
          bthmatches: [
              {
@@ -287,7 +305,12 @@ const players = [
             wickets: 170,
         },
         huplmatches: [
-            
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 1,runs: 27,ballsFaced: 27 },
+                bowling: { overs: 1,runsConceded: 13,wickets: 0 },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+            },
          ],
          bthmatches: [
              
@@ -311,6 +334,12 @@ const players = [
             batting: { position: 2,runs: 10,ballsFaced: 14 },
             bowling: { overs: 3,runsConceded: 18,wickets: 1 },
             fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+            },
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: '-',runs: '',ballsFaced: '' },
+                bowling: { overs: 4,runsConceded: 44,wickets: 0 },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
             },
         ],
         bthmatches: [
@@ -341,7 +370,12 @@ const players = [
             wickets: 170,
         },
         huplmatches: [
-           
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 6,runs: 6,ballsFaced: 2 },
+                bowling: { overs: 1.4,runsConceded: 10,wickets: 2 },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
             {
@@ -400,7 +434,12 @@ const players = [
             wickets: 170,
         },
         huplmatches: [
-           
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: '',runs: '',ballsFaced: '' },
+                bowling: { overs: 4,runsConceded: 32,wickets: 3 },
+                fielding: { catches: 1,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
             {
@@ -436,6 +475,12 @@ const players = [
             bowling: { overs: 3,runsConceded: 26,wickets: 1 },
             fielding: { catches: 1,runOuts: 0,stumpings: 0 }
             },
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 'Opener',runs: 18,ballsFaced: 9 },
+                bowling: { overs: '',runsConceded: '',wickets: '' },
+                fielding: { catches: 1,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
             
@@ -459,7 +504,12 @@ const players = [
             wickets: 170,
         },
         huplmatches: [
-           
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 4,runs: 31,ballsFaced: 24 },
+                bowling: { overs: '',runsConceded: '',wickets: '' },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
             
@@ -496,7 +546,12 @@ const players = [
             wickets: 170,
         },
         huplmatches: [
-           
+            {
+                matchId: 4,matchDate: "2024-11-23", opponent: "Huskies",series: "HUPL",
+                batting: { position: 2,runs: 6,ballsFaced: 5 },
+                bowling: { overs: '',runsConceded: '',wickets: '' },
+                fielding: { catches: 0,runOuts: 0,stumpings: 0 }
+            },
         ],
         bthmatches: [
            
