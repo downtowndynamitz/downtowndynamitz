@@ -5,7 +5,7 @@ import axios from 'axios';
 import playerslist from '../data/players'
 import Modal from 'react-modal';
 import './Admin.css'
-
+/*"start": "react-scripts start",*/
 Modal.setAppElement('#root');
 const Admin = () => {
     const [selectedOption, setSelectedOption] = useState(""); 

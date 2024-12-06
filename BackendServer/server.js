@@ -1,12 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname, '../src')));
 
 app.post('/update-matches', (req, res) => {
     const { id, matchType, newMatch } = req.body;
@@ -87,6 +90,10 @@ app.post('/update-news', (req, res) => {
         });
     } catch (parseErr) { return res.status(500).send('Error parsing JSON'); }
     });
+});
+
+app.get('*', (req, res) => { 
+    res.sendFile(path.join(__dirname, '../src/index.js')); 
 });
 
 app.listen(port, () => {

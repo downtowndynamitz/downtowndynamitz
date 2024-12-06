@@ -1130,19 +1130,19 @@
         "opponent": "Striders",
         "series": "BTH",
         "batting": {
-          "position": "1",
-          "runs": 26,
-          "ballsFaced": "15"
+          "position": "7",
+          "runs": 88,
+          "ballsFaced": "60"
         },
         "bowling": {
-          "overs": 3,
-          "runsConceded": 20,
-          "wickets": 0
+          "overs": 1,
+          "runsConceded": 2,
+          "wickets": 2
         },
         "fielding": {
-          "catches": 3,
-          "runOuts": 3,
-          "stumpings": 1
+          "catches": 1,
+          "runOuts": 2,
+          "stumpings": 3
         }
       },
       {
