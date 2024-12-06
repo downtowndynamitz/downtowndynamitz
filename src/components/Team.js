@@ -7,8 +7,11 @@ const Team = ({ players }) => {
         <div className="team">
             <h1>Meet the Team</h1>
             <div className="player-grid">
-                {players.map(player => (
-                    <Player key={player.name} player={player} />
+                {players.map((player,idx) => (
+                    idx > 0 ? (
+                        <Player key={player.name} player={player} />
+                    ) : (null)
+                    
                 ))}
             </div>
         </div>

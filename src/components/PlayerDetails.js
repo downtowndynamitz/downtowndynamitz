@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import players from '../data/players';
+import players from '../data/players.json';
 import Playerstats from './Playerstats';
 
 

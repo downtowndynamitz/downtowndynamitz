@@ -10,7 +10,7 @@ const Player = ({ player }) => {
     return (
         <div className={`player-card tablecards ${isActive ? 'addflip' : ''}`} onClick={flipcard}>
             <Link to={`/team/${player.id}`}>
-                <img src={player.photo} alt={`${player.name}`} className="player-photo" />
+                <img src={player.photo || "assets/images/teammembers/default.png"} alt={`${player.name}`} className="player-photo" />
                 <h2>{player.name}</h2>
             </Link>
             <p>Role: {player.role}</p>

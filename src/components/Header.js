@@ -1,8 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './Header.css';
+import getKey from '../data/players.json'
 
 const Header = () => {
+    const navigate = useNavigate(); 
+    const handleAdminClick = () => { 
+        const password = prompt('Please enter the admin password:'); 
+        const correctPassword = getKey[0].projectsecret; 
+        if (password === correctPassword) { 
+            navigate('/admin'); 
+        } else { 
+            alert('Access denied'); 
+        } 
+    };
     return (
         <header className="header">
             <div className="banner">
@@ -18,6 +29,7 @@ const Header = () => {
                             <li><Link to="/team">Team</Link></li>
                             <li><Link to="/schedule">Schedule</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
+                            <li><a href="#" onClick={handleAdminClick}>Admin</a></li>
                         </ul>
                     </nav>
                 </div>

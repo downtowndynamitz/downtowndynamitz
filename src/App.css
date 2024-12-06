@@ -25,7 +25,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-.team, .home, .schedule, .contact {
+.team, .home, .schedule, .contact, .admin {
   margin: -20px 20px 20px 20px;
   background-color: floralwhite;
 }
@@ -55,7 +55,7 @@ nav ul li a {
   border-radius: 50%;
 }
 
-.photo-gallery, .latest-news, .upcoming-matches, .weeklykey-players h3 {
+.photo-gallery, .latest-news h3, .upcoming-matches, .weeklykey-players h3,.sponsors h3, .admin h3 {
   text-decoration: underline;
 }
 
@@ -87,7 +87,7 @@ nav ul li a {
   padding: 15px;
   margin: 10px 0;
   width: 45%; /* Ensures each card takes up 45% of the container width */
-  max-width: 400px;
+  max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-weight: 800;
@@ -151,8 +151,13 @@ nav ul li a {
   margin: 10px 0;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .App {
+    font-size: 0.9rem;
+  }
+
   header {
     padding: 10px;
     font-size: 16px;
@@ -163,9 +168,8 @@ nav ul li a {
     margin: 10px 0;
   }
 
-  .team, .home, .schedule, .contact {
+  .team, .home, .schedule, .contact, .admin {
     margin: 10px;
-    height: auto; /* Adjust height for mobile screens */
   }
 
   .player-details {
@@ -185,10 +189,93 @@ nav ul li a {
 
   .upcoming-matches {
     flex-direction: column;
+    gap: 10px; /* Adjust the gap for mobile */
   }
 
   .match-card {
     width: 90%; /* Adjust width for smaller screens */
     margin: 10px auto; /* Center the cards on mobile screens */
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .playerstatscard {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .playerstatscardcontainer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .match-card p {
+    font-size: 0.8rem;
+  }
+
+  .statsdata {
+    font-size: large;
+  }
+}
+
+@media (min-width: 769px) {
+  .App {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .player-details {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .player-details .player-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .photo-gallery img {
+    width: 650px;
+    height: 540px;
+  }
+
+  .upcoming-matches {
+    flex-direction: row;
+  }
+
+  .match-card {
+    width: 45%;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .playerstatscard {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .playerstatscardcontainer {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .match-card p {
+    font-size: 0.9rem;
+  }
+
+  .statsdata {
+    font-size: xx-large;
   }
 }

@@ -1,0 +1,130 @@
+/* Base styles for all screen sizes */
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between sections */
+  align-items: center;
+    justify-content: center;
+}
+
+.btnfunc {
+  display: flexbox;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Primary blue color */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.btnfunc:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.section {
+  
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 5px 10px 20px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.rndCorners, select {
+  padding: 10px;
+  border-radius: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  flex: 1 1 100%; /* Full width on small screens */
+  display: flex;
+  width:210px;
+  margin: 5px;
+  
+}
+
+.rndCornersBig {
+  padding: 10px;
+  border-radius: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  flex: 1 1 100%; /* Full width on small screens */
+  display: flex;
+  width:90%;
+  margin: 5px;
+  
+}
+
+.rndCornerssmall{
+  padding: 10px;
+  border-radius: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  flex: 1 1 100%; /* Full width on small screens */
+  display: flex;
+  width:110px;
+  margin: 5px;
+}
+
+label { display: none; }
+/* Styles for larger screens (desktop) */
+@media (min-width: 768px) {
+  .admin {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .section {
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    
+  }
+  .section1{
+    margin-top: 10px;
+  }
+
+  .rndCorners, .rndCornerssmall, select {
+    flex: 1 1 100%; /* Full width on larger screens */
+    display: inline;
+  }
+  label { display: inline; }
+  label,.rndCorners{
+    padding-left:10px;
+  }
+  .btnfunc {
+    display: flexbox;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .btnfunc:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .button-container{
+    margin-left: 40%;
+  }
+}

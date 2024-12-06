@@ -60,7 +60,7 @@ const totalCatches = [...bthmatches, ...huplmatches]
                             <td>{hupl.opponent}</td>
                             <td>{hupl.batting.position}</td>
                             <td>{hupl.batting.runs} ({hupl.batting.ballsFaced}) </td>
-                            <td>{hupl.bowling.overs} - {hupl.bowling.wickets} - {hupl.bowling.runsConceded}</td>
+                            <td>{hupl.bowling.overs}/{hupl.bowling.wickets}({hupl.bowling.runsConceded})</td>
                             <td>{hupl.fielding.catches}</td>
                             <td>{hupl.fielding.stumpings}/{hupl.fielding.runOuts}</td>
                         </tr>
