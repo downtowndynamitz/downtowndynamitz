@@ -9,8 +9,6 @@ const port = process.env.PORT || 5000; // Let Vercel manage the port
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, '../build')));
-
 app.post('/update-matches', (req, res) => {
     const { id, matchType, newMatch } = req.body;
 
@@ -82,10 +80,6 @@ app.post('/update-news', (req, res) => {
             return res.status(500).send('Error parsing JSON');
         }
     });
-});
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
 app.listen(port, () => {

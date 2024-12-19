@@ -2,7 +2,6 @@
   "name": "cricket-team-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://downtowndynamitz-r06d82a8z-downtowndynamitzs-projects.vercel.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -25,7 +24,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node BackendServer/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
