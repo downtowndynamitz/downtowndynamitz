@@ -1188,6 +1188,27 @@
           "runOuts": 4,
           "stumpings": 4
         }
+      },
+      {
+        "matchId": "4",
+        "matchDate": "12/14/2024",
+        "opponent": "Wolfpack Icons",
+        "series": "BTH",
+        "batting": {
+          "position": "Opener",
+          "runs": 10,
+          "ballsFaced": "10"
+        },
+        "bowling": {
+          "overs": 1,
+          "runsConceded": 10,
+          "wickets": 1
+        },
+        "fielding": {
+          "catches": 1,
+          "runOuts": 1,
+          "stumpings": 1
+        }
       }
     ]
   }

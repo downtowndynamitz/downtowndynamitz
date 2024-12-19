@@ -166,8 +166,8 @@ const Admin = () => {
         }; 
         const requestData = { id: formData.id, matchType: formData.matchType, newMatch }; 
         try { 
-            //const response = await axios.post('http://localhost:5000/update-matches', requestData); 
-            const response = await axios.post('https://downtowndynamitz.vercel.app/update-matches', requestData); 
+            const response = await axios.post('http://localhost:5000/update-matches', requestData); 
+            //const response = await axios.post('https://downtowndynamitz.vercel.app/update-matches', requestData); 
             setIsModalOpen(true);
             Clearfields();
         } catch (error) { 
