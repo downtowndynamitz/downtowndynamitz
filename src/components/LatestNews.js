@@ -15,7 +15,7 @@ const LatestNews = () => {
         };
 
         try { 
-            const response = await axios.post('http://localhost:5000/update-news', datalatestnews); 
+            await axios.post('http://localhost:5000/update-news', datalatestnews); 
             setIsModalOpen(true);
             Clearfields();
         } catch (error) { 

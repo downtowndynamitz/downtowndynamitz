@@ -1,6 +1,4 @@
 import {React,useEffect,useState} from 'react';
-import Form from 'react-bootstrap/Form';
-//import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios';
 import playerslist from '../data/players'
 import Modal from 'react-modal';
@@ -11,7 +9,6 @@ const Admin = () => {
     const [selectedOption, setSelectedOption] = useState(""); 
     const [selectedKey, setSelectedKey] = useState("");
     const [selectedMatchId, setSelectedMatchId] = useState("");
-    const results = [];
     const [opponents,setopponents] = useState("");
     const [formData, setFormData] = useState({
         id: '', 
@@ -63,10 +60,7 @@ const Admin = () => {
             // Add more matches as needed
         ]
     };
-    useEffect(() => {
-        
-    }, []);
-
+    
     const Clearfields = () => {
         setFormData({id: '', 
             matchType: '', // Default match type 
@@ -117,7 +111,7 @@ const Admin = () => {
     }
     const GetOpponent = (event) =>{
        let currenval = event.target.value;
-        if(ttype == 'huplmatches'){
+        if(ttype === 'huplmatches'){
             //console.log(event.target.value);
             tournament1.matches.forEach((matches,idx) => {
                 if(currenval == matches.date){
@@ -126,7 +120,7 @@ const Admin = () => {
                     HandleMainData(event)
                 }
             });
-        }else if(ttype == 'bthmatches'){
+        }else if(ttype === 'bthmatches'){
             //console.log(event.target.value);
             tournament2.matches.forEach((matches,idx) => {
                 if(currenval == matches.date){
