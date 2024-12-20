@@ -29,7 +29,7 @@ const Header = () => {
                             <li><Link to="/team">Team</Link></li>
                             <li><Link to="/schedule">Schedule</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
-                            <li><a href="#" onClick={handleAdminClick}>Admin</a></li>
+                            <li><button onClick={handleAdminClick}>Admin</button></li>
                         </ul>
                     </nav>
                 </div>

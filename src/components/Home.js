@@ -105,7 +105,7 @@ const Home = () => {
             </div>
             
             <div className="latest-news">
-                <h3>Latest News (<a href="#" onClick={handleAddAdminClick}>+</a>)</h3>
+                <h3>Latest News (<button onClick={handleAddAdminClick}>+</button>)</h3>
                 <p id='lastestp1'>{latestnews.elements[0].latesttemplate[0]} {latestnews.elements[0].keyPlayers[0]}</p>
                 <p id='lastestp2'>{latestnews.elements[0].latesttemplate[1]} {latestnews.elements[0].keyPlayers[1]} {latestnews.elements[0].latestNews[1]}</p>
                 <p id='lastestp3'>{latestnews.elements[0].latesttemplate[2]} {latestnews.elements[0].keyPlayers[2]} {latestnews.elements[0].latestNews[2]}</p>
