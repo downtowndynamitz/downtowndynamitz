@@ -48,7 +48,7 @@ const Home = () => {
             }
         }
         getUpcomingmatches();  
-    }, []);
+    });
     
     const navigate = useNavigate(); 
     const handleAddAdminClick = () => { 

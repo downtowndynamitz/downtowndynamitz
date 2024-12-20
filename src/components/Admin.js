@@ -1,4 +1,4 @@
-import {React,useEffect,useState} from 'react';
+import {React,useState} from 'react';
 import axios from 'axios';
 import playerslist from '../data/players'
 import Modal from 'react-modal';
@@ -6,7 +6,7 @@ import './Admin.css'
 /*"start": "react-scripts start",*/
 Modal.setAppElement('#root');
 const Admin = () => {
-    const [selectedOption, setSelectedOption] = useState(""); 
+    const [setSelectedOption] = useState(""); 
     const [selectedKey, setSelectedKey] = useState("");
     const [selectedMatchId, setSelectedMatchId] = useState("");
     const [opponents,setopponents] = useState("");
@@ -114,7 +114,7 @@ const Admin = () => {
         if(ttype === 'huplmatches'){
             //console.log(event.target.value);
             tournament1.matches.forEach((matches,idx) => {
-                if(currenval == matches.date){
+                if(currenval === matches.date){
                     setopponents(matches.opponent);
                     setSelectedMatchId(idx+1)
                     HandleMainData(event)
@@ -123,7 +123,7 @@ const Admin = () => {
         }else if(ttype === 'bthmatches'){
             //console.log(event.target.value);
             tournament2.matches.forEach((matches,idx) => {
-                if(currenval == matches.date){
+                if(currenval === matches.date){
                     setopponents(matches.opponent);
                     setSelectedMatchId(idx+1)
                     HandleMainData(event)
@@ -160,7 +160,7 @@ const Admin = () => {
         }; 
         const requestData = { id: formData.id, matchType: formData.matchType, newMatch }; 
         try { 
-            const response = await axios.post(`${apiUrl}/update-matches`, requestData); 
+             await axios.post(`${apiUrl}/update-matches`, requestData); 
             //const response = await axios.post('https://downtowndynamitz.vercel.app/update-matches', requestData); 
             setIsModalOpen(true);
             Clearfields();
@@ -203,7 +203,7 @@ const Admin = () => {
                     <option value="bthmatches">BTH Tournment</option>
                 </select>
                 
-                {ttype == "huplmatches" ? (
+                {ttype === "huplmatches" ? (
                     <>
                     <label>Date : </label>
                     <select name="matchDate" id="matchDate" className='rndCorners'   onChange={GetOpponent} required>
@@ -226,7 +226,7 @@ const Admin = () => {
                     
                     </>
                 ) : null }
-                {ttype == "bthmatches" ? (
+                {ttype === "bthmatches" ? (
                     <>
                     <label>Date : </label>
                     <select name="matchDate" id="matchDate" className='rndCorners' required  onChange={GetOpponent} >
