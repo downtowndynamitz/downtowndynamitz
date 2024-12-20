@@ -6,7 +6,7 @@ import './Admin.css'
 /*"start": "react-scripts start",*/
 Modal.setAppElement('#root');
 const Admin = () => {
-    const [SelectedOption,setSelectedOption] = useState(""); 
+   // const [selectedOption,setSelectedOption] = useState(""); 
     const [selectedKey, setSelectedKey] = useState("");
     const [selectedMatchId, setSelectedMatchId] = useState("");
     const [opponents,setopponents] = useState("");
@@ -81,12 +81,12 @@ const Admin = () => {
         setSelectedMatchId("");
         setopponents("");
         setSelectedKey("");
-        setSelectedOption("");
+        //setSelectedOption("");
     }
 
     const GetResults = (event) => {
         const selectedValue = event.target.value; 
-        setSelectedOption(selectedValue); 
+        //setSelectedOption(selectedValue); 
         const selectedOptionObj = playerslist.find(option => option.id === selectedValue); 
         if (selectedOptionObj) { 
             setSelectedKey(selectedOptionObj); 
