@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../build')));
 
 // Endpoint to update matches
-app.post('/update-matches', (req, res) => {
+app.post('/api/update-matches', (req, res) => {  // Updated endpoint path
     const { id, matchType, newMatch } = req.body;
 
     if (!id || !matchType || !newMatch) {
@@ -59,7 +59,7 @@ app.post('/update-matches', (req, res) => {
 });
 
 // Endpoint to update news
-app.post('/update-news', (req, res) => {
+app.post('/api/update-news', (req, res) => {  // Updated endpoint path
     const newData = req.body;
 
     const filePath = path.join(__dirname, 'data', 'homenews.json');
