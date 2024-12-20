@@ -4,13 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 5000; // Let Vercel manage the port
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve static files from the React app
 app.use(express.static(path.join(__dirname, '../build')));
 
+// Endpoint to update matches
 app.post('/update-matches', (req, res) => {
     const { id, matchType, newMatch } = req.body;
 
@@ -18,7 +20,9 @@ app.post('/update-matches', (req, res) => {
         return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    fs.readFile(path.join(__dirname, '../src/data/players.json'), 'utf8', (err, data) => {
+    const filePath = path.join(__dirname, 'data', 'players.json');
+
+    fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             return res.status(500).json({ error: 'Failed to read JSON file' });
         }
@@ -44,7 +48,7 @@ app.post('/update-matches', (req, res) => {
             matchList[matchIndex] = newMatch;
         }
 
-        fs.writeFile(path.join(__dirname, '../src/data/players.json'), JSON.stringify(playersData, null, 2), 'utf8', (err) => {
+        fs.writeFile(filePath, JSON.stringify(playersData, null, 2), 'utf8', (err) => {
             if (err) {
                 return res.status(500).json({ error: 'Failed to write JSON file' });
             }
@@ -54,10 +58,13 @@ app.post('/update-matches', (req, res) => {
     });
 });
 
+// Endpoint to update news
 app.post('/update-news', (req, res) => {
     const newData = req.body;
 
-    fs.readFile(path.join(__dirname, '../src/data/homenews.json'), (err, data) => {
+    const filePath = path.join(__dirname, 'data', 'homenews.json');
+
+    fs.readFile(filePath, (err, data) => {
         if (err) {
             if (err.code === 'ENOENT') {
                 data = '{"elements":[]}';
@@ -74,7 +81,7 @@ app.post('/update-news', (req, res) => {
 
             const jsonnewdata = { elements: [newData] };
 
-            fs.writeFile(path.join(__dirname, '../src/data/homenews.json'), JSON.stringify(jsonnewdata, null, 2), (err) => {
+            fs.writeFile(filePath, JSON.stringify(jsonnewdata, null, 2), (err) => {
                 if (err) throw err;
                 res.send('Data successfully updated');
             });
@@ -84,6 +91,7 @@ app.post('/update-news', (req, res) => {
     });
 });
 
+// Serve the React app
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });

@@ -35,7 +35,7 @@ const Admin = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const currentDate = new Date();
-    
+    const apiUrl = process.env.REACT_APP_API_URL;
     const tournament1 = {
         title: 'HUPL Tournament',
         matches: [
@@ -166,7 +166,7 @@ const Admin = () => {
         }; 
         const requestData = { id: formData.id, matchType: formData.matchType, newMatch }; 
         try { 
-            const response = await axios.post('http://localhost:5000/update-matches', requestData); 
+            const response = await axios.post(`${apiUrl}/update-matches`, requestData); 
             //const response = await axios.post('https://downtowndynamitz.vercel.app/update-matches', requestData); 
             setIsModalOpen(true);
             Clearfields();
