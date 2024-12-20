@@ -6,7 +6,7 @@ import './Admin.css'
 /*"start": "react-scripts start",*/
 Modal.setAppElement('#root');
 const Admin = () => {
-    const [setSelectedOption] = useState(""); 
+    const [SelectedOption,setSelectedOption] = useState(""); 
     const [selectedKey, setSelectedKey] = useState("");
     const [selectedMatchId, setSelectedMatchId] = useState("");
     const [opponents,setopponents] = useState("");
