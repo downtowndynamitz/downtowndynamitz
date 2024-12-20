@@ -91,7 +91,7 @@ const totalCatches = [...bthmatches, ...huplmatches]
                             <td>{bth.batting.runs} ({bth.batting.ballsFaced}) </td>
                             <td>{bth.bowling.overs} - {bth.bowling.wickets} - {bth.bowling.runsConceded}</td>
                             <td>{bth.fielding.catches}</td>
-                            <td>{bth.fielding.stumpings}//{bth.fielding.runOuts}</td>
+                            <td>{bth.fielding.stumpings}-{bth.fielding.runOuts}</td>
                         </tr>
                     ))}
                 </tbody>
